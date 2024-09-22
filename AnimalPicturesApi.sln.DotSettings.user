@@ -8,5 +8,7 @@
     &lt;TestId&gt;xUnit::E06BA32E-A8CB-4A95-9508-4FDB82365FDB::net8.0::AnimalPicturesApi.UnitTests.Services.PictureFetchServiceTest.When_AnimalType_Is_CAT_GetAnimalImagesByType_Should_Invoke_GetCatImages_Once&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::E06BA32E-A8CB-4A95-9508-4FDB82365FDB::net8.0::AnimalPicturesApi.UnitTests.Repositories.AnimalsPicturesRepositoryTest.GetRecentImageByType_Should_Return_Recent_Image&lt;/TestId&gt;
     &lt;TestId&gt;xUnit::E06BA32E-A8CB-4A95-9508-4FDB82365FDB::net8.0::AnimalPicturesApi.UnitTests.Controllers.AnimalPicturesControllerTest&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::E06BA32E-A8CB-4A95-9508-4FDB82365FDB::net8.0::AnimalPicturesApi.UnitTests.Services.PictureFetchServiceTest.When_AnimalType_Is_DOG_GetAnimalPicturesByType_Should_Invoke_GetDogtImages_Once&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::E06BA32E-A8CB-4A95-9508-4FDB82365FDB::net8.0::AnimalPicturesApi.UnitTests.Repositories.AnimalsPicturesRepositoryTest&lt;/TestId&gt;
   &lt;/TestAncestor&gt;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

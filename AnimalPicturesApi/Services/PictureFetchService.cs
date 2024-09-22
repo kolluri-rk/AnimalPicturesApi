@@ -18,12 +18,25 @@ public class PictureFetchService : IPictureFetchService
     
     public async Task<List<AnimalPicture>> GetAnimalPicturesByType(AnimalType animalType, int count)
     {
-        var fetchedImages = await _animalImageApiService.GetCatImages(count);
+        var animalImages = new List<AnimalPicture>();
         
-        var animalImages = fetchedImages!.ConvertAll(fi => 
-            new AnimalPicture() { AnimalType = AnimalType.CAT.ToString(), Url = fi.url });
-        _logger.Log(LogLevel.Debug, "Animal Images: {%}", JsonConvert.SerializeObject(animalImages));
-
+        switch (animalType)
+        {
+            case AnimalType.CAT:
+            {
+                var fetchedImages = await _animalImageApiService.GetCatImages(count);
+                animalImages = fetchedImages!.ConvertAll(fi => new AnimalPicture() { AnimalType = AnimalType.CAT.ToString(), Url = fi.url });
+                break;
+            }
+            case AnimalType.DOG:
+            {
+                var fetchedImages = await _animalImageApiService.GetDogImages(count);
+                animalImages = fetchedImages!.ConvertAll(fi => new AnimalPicture() { AnimalType = AnimalType.DOG.ToString(), Url = fi.message });
+                break;
+            }
+            default: throw new NotImplementedException("Unknown animal type");
+        }
+        
         return animalImages;
     }
 }

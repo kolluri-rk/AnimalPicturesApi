@@ -19,7 +19,7 @@ public class PictureFetchServiceTest
     }
     
     [Fact]
-    public async void When_AnimalType_Is_CAT_GetAnimalImagesByType_Should_Invoke_GetCatImages_Once()
+    public async void When_AnimalType_Is_CAT_GetAnimalPicturesByType_Should_Invoke_GetCatImages_Once()
     {
         //given
         var apiResponse = new List<CatApiResponse>()
@@ -35,5 +35,24 @@ public class PictureFetchServiceTest
         
         //then
         _imageApiServiceMock.Verify(i => i.GetCatImages(It.IsAny<int>()), Times.Once);
+    }
+    
+    [Fact]
+    public async void When_AnimalType_Is_DOG_GetAnimalPicturesByType_Should_Invoke_GetDogtImages_Once()
+    {
+        //given
+        var apiResponse = new List<DogApiResponse>()
+        {
+            new DogApiResponse() { message = "url1", status = "ok"}
+        };
+        
+        _imageApiServiceMock.Setup(i => i.GetDogImages(It.IsAny<int>()))
+            .ReturnsAsync(apiResponse);
+        
+        //when
+        var result = await _sut.GetAnimalPicturesByType(AnimalType.DOG, 1);
+        
+        //then
+        _imageApiServiceMock.Verify(i => i.GetDogImages(It.IsAny<int>()), Times.Once);
     }
 }
