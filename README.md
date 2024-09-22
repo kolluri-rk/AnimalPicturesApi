@@ -1,5 +1,3 @@
-(cat-api)[https://placebear.com/]
-
 # Animal Pictures API  
 
 This is a sample microservice based on ASP.NET Core 8.0 that fetches a random picture of a cat, a dog, or a bear.
@@ -12,7 +10,7 @@ number of pictures to fetch. Those pictures will be stored in `MySql` database.
 
 External APIs to fetch animal images.  
 
-**CAT**
+**CAT**  
 https://api.thecatapi.com/v1/images/search 
 https://api.thecatapi.com/v1/images/search?limit=10  
 
