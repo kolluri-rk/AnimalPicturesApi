@@ -2,9 +2,13 @@
   animalpicturesapi:
     image: animalpicturesapi
     build:
-      context: .
-      dockerfile: AnimalPicturesApi/Dockerfile
-  
+      context: ./AnimalPicturesApi
+      dockerfile: ./Dockerfile
+    ports:
+      - 7258:8080
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+
   mysql:
     image: mysql
     restart: always

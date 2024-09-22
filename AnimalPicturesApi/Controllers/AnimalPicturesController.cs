@@ -25,7 +25,7 @@ public class AnimalPicturesController : ControllerBase
 
     [HttpGet("{animalType}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
-    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    [ProducesResponseType(StatusCodes.Status204NoContent)]
     public async Task<ActionResult<AnimalPicture>> GetRecentPicture(AnimalType animalType)
     {
         var picture = _animalsPicturesRepository.GetRecenPictureByType(animalType);
