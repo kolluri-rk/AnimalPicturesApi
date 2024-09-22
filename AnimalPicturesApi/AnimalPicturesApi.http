@@ -1,0 +1,6 @@
+@AnimalPicturesApi_HostAddress = http://localhost:5100
+
+GET {{AnimalPicturesApi_HostAddress}}/animal-pictures/CAT/
+Accept: application/json
+
+###

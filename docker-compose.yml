@@ -1,0 +1,6 @@
+﻿services:
+  animalpicturesapi:
+    image: animalpicturesapi
+    build:
+      context: .
+      dockerfile: AnimalPicturesApi/Dockerfile
