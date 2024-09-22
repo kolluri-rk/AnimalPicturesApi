@@ -1,8 +1,20 @@
 using System.Text.Json.Serialization;
+using AnimalPicturesApi.Repositories;
+using AnimalPicturesApi.Services;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddScoped<IPictureFetchService, PictureFetchService>();
+builder.Services.AddScoped<IAnimalsPicturesRepository, AnimalsPicturesRepository>();
+builder.Services.AddHttpClient<IAnimalImageApiService, AnimalImageApiService>();
+
+string mySqlConnectionStr = builder.Configuration.GetConnectionString("DBConn");
+builder.Services.AddDbContextPool<AnimalsDbContext>(options => 
+    options.UseMySql(mySqlConnectionStr, ServerVersion.AutoDetect(mySqlConnectionStr)));
+
+
 builder.Services.AddControllers()
     .AddJsonOptions(opt =>
     {

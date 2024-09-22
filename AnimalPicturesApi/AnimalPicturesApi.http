@@ -4,3 +4,5 @@ GET {{AnimalPicturesApi_HostAddress}}/animal-pictures/CAT/
 Accept: application/json
 
 ###
+POST {{AnimalPicturesApi_HostAddress}}/animal-pictures/CAT?count=1
+Accept: application/json

@@ -4,3 +4,12 @@
     build:
       context: .
       dockerfile: AnimalPicturesApi/Dockerfile
+  
+  mysql:
+    image: mysql
+    restart: always
+    environment:
+      - MYSQL_DATABASE=animals
+      - MYSQL_ROOT_PASSWORD=test123
+    ports:
+      - '3306:3306'

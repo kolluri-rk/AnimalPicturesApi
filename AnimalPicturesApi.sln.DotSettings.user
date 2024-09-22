@@ -1,0 +1,12 @@
+﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/TestProjectMapping/=023B5859_002DA878_002D4A10_002D8D11_002DFB23BCD48CDF/@EntryIndexedValue">E06BA32E-A8CB-4A95-9508-4FDB82365FDB</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/TestTemplateMapping/=xUnit/@EntryIndexedValue">33ff99d8-b1ad-4ed5-a4fd-376b97c2c841</s:String>
+	<s:Boolean x:Key="/Default/Environment/UnitTesting/CreateUnitTestDialog/ShowAdvancedOptions/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=5e04eac5_002D012a_002D4959_002D8b32_002D811ac2c2f592/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="FetchAndSaveImage_Invokes_FetchService_And_AnimalsRepository_Once" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;
+  &lt;TestAncestor&gt;
+    &lt;TestId&gt;xUnit::E06BA32E-A8CB-4A95-9508-4FDB82365FDB::net8.0::AnimalPicturesApi.UnitTests.Controllers.AnimalPicturesControllerTest.FetchAndSaveImage_Invokes_FetchService_And_AnimalsRepository_Once&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::E06BA32E-A8CB-4A95-9508-4FDB82365FDB::net8.0::AnimalPicturesApi.UnitTests.Services.PictureFetchServiceTest.When_AnimalType_Is_CAT_GetAnimalImagesByType_Should_Invoke_GetCatImages_Once&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::E06BA32E-A8CB-4A95-9508-4FDB82365FDB::net8.0::AnimalPicturesApi.UnitTests.Repositories.AnimalsPicturesRepositoryTest.GetRecentImageByType_Should_Return_Recent_Image&lt;/TestId&gt;
+    &lt;TestId&gt;xUnit::E06BA32E-A8CB-4A95-9508-4FDB82365FDB::net8.0::AnimalPicturesApi.UnitTests.Controllers.AnimalPicturesControllerTest&lt;/TestId&gt;
+  &lt;/TestAncestor&gt;
+&lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
